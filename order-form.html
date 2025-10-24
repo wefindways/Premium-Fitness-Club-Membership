@@ -145,7 +145,12 @@
 
       <label>
         Customer Name:
-        <input type="text" name="cusName" placeholder="Enter your name" />
+        <input
+          type="text"
+          name="cusName"
+          placeholder="Enter your name"
+          required
+        />
       </label>
 
       <div class="fieldset-container">
@@ -154,17 +159,22 @@
           <legend>Membership Type</legend>
 
           <label>
-            <input type="radio" name="membership" value="adult" />
+            <input type="radio" name="membership" value="adult" required />
             Standard Adult
           </label>
 
           <label>
-            <input type="radio" name="membership" value="student" />
+            <input type="radio" name="membership" value="student" required />
             Student
           </label>
 
           <label>
-            <input type="radio" name="membership" value="senior citizen" />
+            <input
+              type="radio"
+              name="membership"
+              value="senior citizen"
+              required
+            />
             Senior Citizen
           </label>
         </fieldset>
@@ -203,6 +213,7 @@
             type="number"
             min="1"
             max="24"
+            required
           />
         </fieldset>
       </div>

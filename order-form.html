@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Fitness Club Membership</title>
+    <link rel="stylesheet" href="order-form.css" />
+  </head>
+  <body>
+    <form action="process-order.php" method="post">
+      <h1>Premium Fitness Club Membership</h1>
+
+      <label>
+        Customer Name:
+        <input
+          type="text"
+          name="customerName"
+          placeholder="Enter your name"
+          required
+        />
+      </label>
+
+      <div class="fieldset-container">
+        <!-- Membership section -->
+        <fieldset>
+          <legend>Membership Type</legend>
+
+          <label>
+            <input type="radio" name="membership" value="adult" required />
+            Standard Adult
+          </label>
+
+          <label>
+            <input type="radio" name="membership" value="student" required />
+            Student
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="membership"
+              value="senior citizen"
+              required
+            />
+            Senior Citizen
+          </label>
+        </fieldset>
+
+        <!-- Optional Service section -->
+        <fieldset>
+          <legend>Optional Services</legend>
+
+          <label>
+            <input type="checkbox" name="yoga" value="yoga" />
+            Yoga
+          </label>
+
+          <label>
+            <input type="checkbox" name="zumba" value="zumba" />
+            Zumba
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="personalTrainer"
+              value="personal trainer"
+            />
+            Personal Trainer
+          </label>
+        </fieldset>
+
+        <!-- Membership Duration section -->
+        <fieldset>
+          <legend>Membership Duration</legend>
+
+          <input
+            class="membershipDuration"
+            name="membershipDuration"
+            type="number"
+            min="1"
+            max="24"
+            required
+          />
+        </fieldset>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-container">
+        <button type="submit">Sumbit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

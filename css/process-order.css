@@ -1,0 +1,98 @@
+:root {
+  --accent: #007bff;
+  --text: #222;
+  --bg: #f8f9fb;
+  --card: #fff;
+  --border: #ddd;
+}
+
+/* Basic layout */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+}
+
+/* Main container */
+.container {
+  background: var(--card);
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  margin-top: 15px;
+  color: var(--accent);
+  font-size: 18px;
+}
+
+/* List styling */
+ul {
+  margin-top: 5px;
+  padding-left: 25px;
+  color: #444;
+}
+
+/* Fee summary */
+.fees {
+  background: #f1f6ff;
+  border-radius: 6px;
+  padding: 15px;
+  border: 1px solid #cfe0ff;
+}
+
+.fees p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.fees .total {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--accent);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: background 0.25s ease;
+}
+
+.back-btn:hover {
+  background: #0056b3;
+}

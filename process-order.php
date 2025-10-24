@@ -62,6 +62,7 @@ function FormatCurrency($num) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Premium Fitness Club – Order Summary</title>
+  <link rel="stylesheet" href="process-order.css">
 </head>
 <body>
   <div>
@@ -69,7 +70,7 @@ function FormatCurrency($num) {
 
     <div class="section1">
       <p>Customer Name: <?= htmlspecialchars($customerName) ?></p>
-      <p>Membership: <?= htmlspecialchars($membership) ?></p>
+      <p>Membership: <?= ucfirst(htmlspecialchars($membership)) ?></p>
       <p>Duration: <?= htmlspecialchars($membershipDuration) ?> months</p><br>
 
       <p>Optional Services: </p>
@@ -104,7 +105,7 @@ function FormatCurrency($num) {
     </div>
 
     <a href="order-form.html" class="back-btn">
-      <button>← Back to Calculator</button>
+      ← Back to Calculator
     </a>
   </div>
 </body>

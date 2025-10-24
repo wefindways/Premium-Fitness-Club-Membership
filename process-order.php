@@ -71,7 +71,14 @@ function FormatCurrency($num) {
     <div class="section1">
       <p>Customer Name: <?= htmlspecialchars($customerName) ?></p>
       <p>Membership: <?= ucfirst(htmlspecialchars($membership)) ?></p>
-      <p>Duration: <?= htmlspecialchars($membershipDuration) ?> months</p><br>
+      <p>Duration: <?= htmlspecialchars($membershipDuration) ?> 
+      <?php if($membershipDuration > 1): ?>
+        months
+      <?php ?>
+
+      <?php else: ?>
+        month 
+      <?php endif; ?><br>
 
       <p>Optional Services: </p>
       <ul>
